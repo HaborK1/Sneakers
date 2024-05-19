@@ -60,7 +60,7 @@ function Card({
           <div className="d-flex justify-between align-center">
             <div className="d-flex flex-column">
               <span>Цена:</span>
-              <b>{price} руб.</b>
+              <b>{Intl.NumberFormat("ru").format(price)} руб.</b>
             </div>
             {onPlus && (
               <img
